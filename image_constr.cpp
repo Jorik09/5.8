@@ -35,6 +35,7 @@ vecops cast_ray(const vecops& begin, const vecops& vec, const std::vector<box*>&
     if (!scene_intersect(begin, vec, objects, point, N, colour, limit)) {
         return BACKGROUND_COLOUR;
     }
+    return colour;
 
 
 

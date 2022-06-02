@@ -12,8 +12,8 @@ struct Light {
     vecops _position;
     double _intensity;
 
-    Light(): _position(), _intensity(1.5) {};
-    Light(const vecops& position): _position(position), _intensity(1.5) {};
+    Light(): _position(), _intensity(0.0) {};
+    Light(const vecops& position): _position(position), _intensity(0.0) {};
     Light(const vecops& position, double intensity): _position(position), _intensity(intensity) {};
     Light(const Light& light): _position(light._position), _intensity(light._intensity) {};
 
